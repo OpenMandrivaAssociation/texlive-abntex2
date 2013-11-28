@@ -1,11 +1,11 @@
-# revision 31530
+# revision 32013
 # category Package
 # catalog-ctan /macros/latex/contrib/abntex2
-# catalog-date 2013-08-27 17:58:59 +0200
+# catalog-date 2013-10-27 11:00:02 +0100
 # catalog-license lppl1.3
-# catalog-version 1.8
+# catalog-version 1.9
 Name:		texlive-abntex2
-Version:	1.8
+Version:	1.9
 Release:	1
 Summary:	Typeset technical and scientific Brazilian documents based on ABNT rules
 Group:		Publishing
