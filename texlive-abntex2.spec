@@ -6,7 +6,7 @@
 # catalog-version 1.9.2
 Name:		texlive-abntex2
 Version:	1.9.2
-Release:	1
+Release:	2
 Summary:	Typeset technical and scientific Brazilian documents based on ABNT rules
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/abntex2
