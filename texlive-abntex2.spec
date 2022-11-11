@@ -1,18 +1,12 @@
-# revision 32794
-# category Package
-# catalog-ctan /macros/latex/contrib/abntex2
-# catalog-date 2014-01-26 14:22:53 +0100
-# catalog-license lppl1.3
-# catalog-version 1.9.2
 Name:		texlive-abntex2
-Version:	1.9.6
-Release:	2
+Version:	49248
+Release:	1
 Summary:	Typeset technical and scientific Brazilian documents based on ABNT rules
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/abntex2
 License:	LPPL1.3
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/abntex2.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/abntex2.doc.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/abntex2.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/abntex2.doc.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -26,12 +20,12 @@ reports, research project and others) based on ABNT rules
 abntex.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -60,9 +54,6 @@ abntex.
 %doc %{_texmfdistdir}/doc/latex/abntex2/examples/abntex2-modelo-img-grafico.pdf
 %doc %{_texmfdistdir}/doc/latex/abntex2/examples/abntex2-modelo-img-marca.pdf
 %doc %{_texmfdistdir}/doc/latex/abntex2/examples/abntex2-modelo-include-comandos.tex
-%doc %{_texmfdistdir}/doc/latex/abntex2/examples/abntex2-modelo-livro-bandeirinha.jpg
-%doc %{_texmfdistdir}/doc/latex/abntex2/examples/abntex2-modelo-livro-pintassilgo.jpg
-%doc %{_texmfdistdir}/doc/latex/abntex2/examples/abntex2-modelo-livro-saira-amarela.jpg
 %doc %{_texmfdistdir}/doc/latex/abntex2/examples/abntex2-modelo-livro.pdf
 %doc %{_texmfdistdir}/doc/latex/abntex2/examples/abntex2-modelo-livro.tex
 %doc %{_texmfdistdir}/doc/latex/abntex2/examples/abntex2-modelo-projeto-pesquisa.pdf
@@ -77,7 +68,7 @@ abntex.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1
+%autosetup -p1 -c -a1
 
 %build
 
