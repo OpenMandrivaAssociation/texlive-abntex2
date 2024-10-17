@@ -3,7 +3,7 @@ Version:	49248
 Release:	2
 Summary:	Typeset technical and scientific Brazilian documents based on ABNT rules
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/abntex2
+URL:		https://www.ctan.org/tex-archive/macros/latex/contrib/abntex2
 License:	LPPL1.3
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/abntex2.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/abntex2.doc.r%{version}.tar.xz
